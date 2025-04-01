@@ -1,0 +1,12 @@
+<div class="relative w-full h-screen">
+    <!-- Slider Images -->
+    <div *ngFor="let image of images; let i = index" class="absolute inset-0 transition-all duration-500" [ngClass]="{'opacity-100': currentIndex === i, 'opacity-0': currentIndex !== i}">
+      <img [src]="image.src" alt="Slider Image" class="w-full h-full object-cover">
+    </div>
+  
+    <!-- Radio Buttons -->
+    <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <button *ngFor="let image of images; let i = index" (click)="goToSlide(i)" [class]="currentIndex === i ? 'w-2 h-2 rounded-full bg-pink-500' : 'w-2 h-2 rounded-full bg-white'"></button>
+    </div>
+  </div>
+  <app-new-arrivals></app-new-arrivals>
