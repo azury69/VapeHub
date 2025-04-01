@@ -15,8 +15,8 @@
   
         <!-- Mobile Menu -->
         <ul *ngIf="menuVisible" class="absolute text-white md:hidden">
-          <li><a href="#" class="hover:text-pink-400 transition">Home</a></li>
-          <li><a href="#" class="hover:text-pink-400 transition">Shop</a></li>
+          <li><a routerLink="hero" class="hover:text-pink-400 transition">Home</a></li>
+          <li><a routerLink="shop" class="hover:text-pink-400 transition">Shop</a></li>
           <li><a href="#" class="hover:text-pink-400 transition">New Arrivals</a></li>
           <li><a href="#" class="hover:text-pink-400 transition">Contact</a></li>
         </ul>
@@ -24,8 +24,8 @@
       
       <!-- Menu (for medium screens and up) -->
       <ul class="hidden md:flex space-x-8 uppercase text-sm font-semibold">
-        <li><a href="#" class="hover:text-pink-400 transition">Home</a></li>
-        <li><a href="#" class="hover:text-pink-400 transition">Shop</a></li>
+        <li><a routerLink="hero" class="hover:text-pink-400 transition">Home</a></li>
+        <li><a routerLink="shop" class="hover:text-pink-400 transition">Shop</a></li>
         <li><a href="#" class="hover:text-pink-400 transition">New Arrivals</a></li>
         <li><a href="#" class="hover:text-pink-400 transition">Contact</a></li>
       </ul>

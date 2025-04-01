@@ -14,11 +14,12 @@ export class MapsComponent implements OnInit, AfterViewInit, OnDestroy {
   private mapContainer!: ElementRef<HTMLElement>;
 
   ngOnInit(): void {
+    // https://cloud.maptiler.com/account/keys/
     config.apiKey = 'iBGHnaGHOHKGwSQWAbOo';
   }
 
   ngAfterViewInit() {
-    const initialState = { lng: 85.2987, lat: 27.6894, zoom: 16 };
+    const initialState = { lng: 85.2987, lat: 27.6894, zoom: 15 };
 
     this.map = new Map({
       container: this.mapContainer.nativeElement,

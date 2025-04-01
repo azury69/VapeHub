@@ -1,0 +1,25 @@
+<div class="p-5 bg-gray-100" style="background-image: url('/pexels-marek-piwnicki-3907296-8738496.jpg'); background-size: cover; background-position: center;">
+    <div class="max-w-7xl mx-auto px-6 pt-12">
+        <!-- Heading -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-semibold text-gray-400">Choose Your Category</h2>
+            <p class="text-xl text-gray-300 mt-2">Explore a wide range of vape products, hookahs, and accessories.</p>
+        </div>
+
+        <!-- Category Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Loop through categories -->
+            <div *ngFor="let category of categories" class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                <img [src]="category.imageUrl" alt="{{category.name}}" class="w-full h-48 object-cover">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <h3 class="text-3xl text-white font-semibold">{{ category.name }}</h3>
+                </div>
+                <div class="p-2 text-center">
+                    <a [href]="category.link" class="text-blue-600 hover:text-blue-800 text-xl">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
