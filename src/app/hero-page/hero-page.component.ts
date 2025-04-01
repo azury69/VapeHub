@@ -1,10 +1,11 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NewArrivalsComponent } from "../new-arrivals/new-arrivals.component";
+import { MapsComponent } from "../maps/maps.component";
 
 @Component({
   selector: 'app-hero-page',
-  imports: [NgFor, NgClass, NewArrivalsComponent],
+  imports: [NgFor, NgClass, NewArrivalsComponent, MapsComponent],
   templateUrl: './hero-page.component.html',
   styleUrl: './hero-page.component.css'
 })
